@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .watch{
+            font-size: 2rem;
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="watch">
+            <h1></h1>
+        </div>
+    </div>
+    <script>
+        const interval =  setInterval(() => {
+            const date = new Date()
+            const time = date.toLocaleTimeString()
+            const heading = document.getElementsByTagName('h1')[0]
+            heading.innerText = time
+        }, 1000);
+
+        
+
+    </script>
+</body>
+</html>
