@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+
+            <form action="" onsubmit="handleSubmit(event)" class="form-container">
+                <h1>Add Todo</h1>
+                <div class="form-item-wrapper">
+                    <label for="">
+                        <input id="input-box" type="text" placeholder="Add your todo">
+                    </label>
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+
+            <div class="deleted-todo">
+                <h1></h1>
+                <ul>
+                    <li>Deleted todo</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="right-container">
+            <h1>Your Todos</h1>
+            <ul class="todo-container">
+                <!-- todo will inserted through javascript -->
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

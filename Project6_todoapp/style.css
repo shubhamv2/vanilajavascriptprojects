@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+:root{
+    --text-color: #ecf0f1;
+}
+
+.container{
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    width: 100%;
+}
+
+.left-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+    
+}
+.form-container{
+    color: var(--text-color);
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #111;
+}
+
+.form-item-wrapper{
+    display: flex;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.form-container input{
+    padding: .5rem 1rem;
+    outline: none;
+    border:none;
+    font-size: 1.3rem;
+    background-color: #222;
+    color:var(--text-color);
+}
+
+
+.form-container button{
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0 .6rem;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.form-container button:hover{
+    background-color: rgb(0, 145, 0);
+}
+
+.form-container button:active{
+    background-color: rgb(0, 106, 0);
+}
+
+
+.deleted-todo{
+    flex: 1;
+    border-radius: .5rem;
+    background-color: #111;
+}
+
+
+
+
+
+/* Right container */
+.right-container{
+    flex: 1;
+    border-radius: .5rem;
+    margin: 1rem;
+    margin-left: 0;
+    background-color: #111;
+    color: var(--text-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow-y:auto;
+    flex: 1;
+}
+
+.todo-container::-webkit-scrollbar{
+    width: 5px;
+}
+
+.todo-container::-webkit-scrollbar-thumb{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.todo-container::-webkit-scrollbar-track{
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.todo-item{
+    display: flex;
+    gap: 1rem;
+    background-color: #222;
+    padding: 1rem;
+    margin-right: .5rem;
+    border-radius: .4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-btn{
+    display: flex;
+    gap: .5rem;
+}
+
+.todo-btn button{
+    outline: none;
+    border: none;
+    color: white;
+    width: 4rem;
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+.todo-btn .delete{
+    background-color: rgb(165, 7, 7);
+}
+
+.todo-btn .edit{
+    background-color: rgb(41, 41, 171);
+}
