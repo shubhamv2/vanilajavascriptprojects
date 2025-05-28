@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.accordion-wrapper{
+    width: 600px;
+    background-color: rgb(19, 19, 19);
+    padding: 1rem;
+}
+
+.accordion{
+    word-break: break-all;
+    border: 1px solid rgb(40, 40, 40);
+    padding: 1rem;
+}
+
+.head-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.more-content{
+    display: none;
+    margin-top: 1rem;
+}
+
+.visible{
+    display: block;
+}
