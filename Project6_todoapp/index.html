@@ -23,10 +23,12 @@
             </form>
 
             <div class="deleted-todo">
-                <h1></h1>
-                <ul>
-                    <li>Deleted todo</li>
+                <h1>Deleted Todo</h1>
+                <ul class="delete-container" id="deleted-todo">
+                    
                 </ul>
+
+                <button onclick="handleOnClear()" class="clear-deleted">Clear</button>
             </div>
 
         </div>
@@ -35,9 +37,12 @@
 
         <div class="right-container">
             <h1>Your Todos</h1>
-            <ul class="todo-container">
+            <ul id="todo-container" class="todo-container">
                 <!-- todo will inserted through javascript -->
             </ul>
+            <div class="modal_popup">
+                
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>

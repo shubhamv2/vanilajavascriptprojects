@@ -27,7 +27,6 @@
 }
 .form-container{
     color: var(--text-color);
-    flex: 1;
     gap: 1rem;
     display: flex;
     align-items: center;
@@ -35,7 +34,59 @@
     flex-direction: column;
     border-radius: .5rem;
     background-color: #111;
+    height: 30%;
 }
+
+.deleted-todo{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #111;
+    color: var(--text-color);
+    padding: 1rem;
+    height: 70%;
+    position: relative;
+}
+.clear-deleted {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .4rem 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(199, 1, 1);
+    color: white;
+    border-radius: .3rem;
+    cursor: pointer ;
+}
+
+
+
+.delete-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.delete-container::-webkit-scrollbar{
+    width: 5px;
+}
+
+.delete-container::-webkit-scrollbar-thumb{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.delete-container::-webkit-scrollbar-track{
+    background-color: #222;
+    border-radius: 10px;
+}
+
+
+
+
 
 .form-item-wrapper{
     display: flex;
@@ -73,10 +124,11 @@
 }
 
 
-.deleted-todo{
-    flex: 1;
-    border-radius: .5rem;
-    background-color: #111;
+
+
+.deleted-todo h1{
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 
@@ -94,6 +146,8 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 .right-container h1{
@@ -107,7 +161,10 @@
     gap: .5rem;
     overflow-y:auto;
     flex: 1;
+
 }
+
+
 
 .todo-container::-webkit-scrollbar{
     width: 5px;
@@ -157,4 +214,33 @@
 
 .todo-btn .edit{
     background-color: rgb(41, 41, 171);
+}
+
+.modal_popup{
+    visibility:hidden;
+    position: absolute;
+    bottom: 1rem;
+    right: -100%;
+    transition: all .3s ease-out;
+    display: flex;
+    gap: 7rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.showModal{
+    visibility: visible;
+    right: 1rem;
+}
+.modal_button{
+    display: flex;
+    gap: 1rem;
+}
+.modal_button button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }
